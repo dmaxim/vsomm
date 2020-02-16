@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Scriptg&display=swap');
 
 body {
     margin: 0;
@@ -30,18 +31,36 @@ ul li a {
 }
 
 
+
+
+
+
 header {
     background-color: #414141;
 
     display: grid;
     grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
+    grid-template-rows: 175px 50px;
 }
 
+header .title {
+    grid-column: 2;
+    grid-row: 1;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: 'Bad Script', cursive;
+}
+header nav {
+    grid-column: 2;
+    grid-row: 2;
+}
 #logo {
     padding: 15px;
     margin-left: 15px;
     display: inline-block;
-
+    grid-column: 1;
+    grid-row: span 2;
 
 }
 
