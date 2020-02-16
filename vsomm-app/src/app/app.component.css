@@ -3,7 +3,10 @@ body {
     margin: 0;
     font-family: sans-serif;
     display: grid;
-    grid-template-rows: 51px 30%;
+    grid-template-rows: auto 50px;
+    grid-template-areas:
+        "main"
+        "footer"
 }
 
 a {
@@ -44,7 +47,7 @@ header {
 
 #logo img {
     border-radius: 50%;
-    width: 120px;
+    width: 140px;
     height: 200px;
 }
 
@@ -62,5 +65,18 @@ section .content {
 }
 
 section .content li {
+    padding: 5px;
+}
+
+.main {
+    grid-area: main
+    
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #414141;
+    color: #fff;
     padding: 5px;
 }
